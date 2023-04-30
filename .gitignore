@@ -1,0 +1,5 @@
+bin/
+obj/
+TestResults/
+packages/
+.vs/WFS7/v16/.suo
