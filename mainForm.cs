@@ -242,5 +242,15 @@ namespace ScatteringDiagrams
             chartLOGIntens.SaveImage("tmp.bmp", ChartImageFormat.Bmp);
             System.Diagnostics.Process.Start(Application.StartupPath + "\\tmp.bmp");
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new About().ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
