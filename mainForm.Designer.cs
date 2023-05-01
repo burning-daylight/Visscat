@@ -309,6 +309,7 @@
             this.tbResults.Location = new System.Drawing.Point(6, 19);
             this.tbResults.Multiline = true;
             this.tbResults.Name = "tbResults";
+            this.tbResults.ReadOnly = true;
             this.tbResults.Size = new System.Drawing.Size(203, 181);
             this.tbResults.TabIndex = 19;
             // 
@@ -810,7 +811,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Scattering Diagrams";
+            this.Text = "Visscat : scattering diagrams";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainForm_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numRadius)).EndInit();

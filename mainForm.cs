@@ -69,7 +69,7 @@ namespace ScatteringDiagrams
                                 chartScattDiagLOG.Series["SerieNatural"].Points.AddXY(Math.Round(points[i].angle, 1), points[i].intensNatural_LogNorm);
                             }
                         }
-                        MessageBox.Show(sum.ToString());
+                        //MessageBox.Show(sum.ToString());
                         break;
                     case 1:
                         for (int i = 0; i < points.Length; i++)
