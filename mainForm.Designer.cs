@@ -89,6 +89,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.chartScattDiagLOG = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.pbShowBig = new System.Windows.Forms.PictureBox();
             this.chartScattDiag = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartLOGIntens = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartIntensity = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -101,7 +102,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.numAnisotropyFactor = new System.Windows.Forms.NumericUpDown();
             this.bCalculateHG = new System.Windows.Forms.Button();
-            this.pbShowBig = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -116,6 +116,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartScattDiagLOG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShowBig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartScattDiag)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartLOGIntens)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartIntensity)).BeginInit();
@@ -126,7 +127,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.chartIntensHG)).BeginInit();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAnisotropyFactor)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbShowBig)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -403,6 +403,17 @@
             title1.Text = "Log scale";
             this.chartScattDiagLOG.Titles.Add(title1);
             // 
+            // pbShowBig
+            // 
+            this.pbShowBig.Image = global::ScatteringDiagrams.Properties.Resources.eye1;
+            this.pbShowBig.Location = new System.Drawing.Point(987, 367);
+            this.pbShowBig.Name = "pbShowBig";
+            this.pbShowBig.Size = new System.Drawing.Size(22, 14);
+            this.pbShowBig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbShowBig.TabIndex = 27;
+            this.pbShowBig.TabStop = false;
+            this.pbShowBig.Click += new System.EventHandler(this.pbShowBig_Click);
+            // 
             // chartScattDiag
             // 
             this.chartScattDiag.BorderlineColor = System.Drawing.Color.Black;
@@ -552,7 +563,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1013, 773);
+            this.tabPage2.Size = new System.Drawing.Size(1013, 753);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Henyey-Greenstein";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -795,17 +806,6 @@
             this.bCalculateHG.UseVisualStyleBackColor = true;
             this.bCalculateHG.Click += new System.EventHandler(this.bCalculateHG_Click);
             // 
-            // pbShowBig
-            // 
-            this.pbShowBig.Image = global::ScatteringDiagrams.Properties.Resources.eye1;
-            this.pbShowBig.Location = new System.Drawing.Point(987, 367);
-            this.pbShowBig.Name = "pbShowBig";
-            this.pbShowBig.Size = new System.Drawing.Size(22, 14);
-            this.pbShowBig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbShowBig.TabIndex = 27;
-            this.pbShowBig.TabStop = false;
-            this.pbShowBig.Click += new System.EventHandler(this.pbShowBig_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -828,7 +828,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -867,6 +867,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartScattDiagLOG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShowBig)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartScattDiag)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartLOGIntens)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartIntensity)).EndInit();
@@ -878,7 +879,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numAnisotropyFactor)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbShowBig)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
